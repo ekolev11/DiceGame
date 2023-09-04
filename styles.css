@@ -37,7 +37,8 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
-
+  display: flex;
+  justify-content: flex-end;
 }
 .roll{
   display: flex;
@@ -59,8 +60,9 @@ footer {
 .rollBtn:hover{
   cursor: pointer;
 }
+
 @media only screen and (max-width: 768px) {
   .rollBtn{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
