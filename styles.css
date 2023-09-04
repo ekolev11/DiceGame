@@ -60,7 +60,51 @@ footer {
 .rollBtn:hover{
   cursor: pointer;
 }
-
+.textBox{
+  background-color: #393E46;
+  border: solid 2px #4ECCA3;
+  border-radius: 5%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+.textBox{
+  background-color: #393E46;
+  border: solid 2px #4ECCA3;
+  border-radius: 5%;
+  color: #4ECCA3;
+  height: 2rem;
+  font-size: 1rem;
+}
+.textBox:focus{
+  outline: none;
+}
+.btnBox{
+  margin-bottom: 4%;
+  background-color: red;
+  color: white;
+  border: #393E46;
+  border-radius: 15%;
+  font-family: 'Indie Flower', cursive;;
+  
+}
+.btnBox:hover{
+  cursor: pointer;
+}
+::placeholder{
+  font-style: italic;
+  color: white;
+  font-size: 1rem;
+}
+.output1{
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+.output2{
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
 @media screen and (max-width: 720px) {
   .dice{
     display: block;
@@ -75,5 +119,8 @@ footer {
   }
   p{
     font-size: 1.5rem;
+  }
+  footer{
+    font-size: 0.7rem;
   }
 }

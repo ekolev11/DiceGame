@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Dicee</title>
     <link rel="stylesheet" href="styles.css">
@@ -13,14 +14,19 @@
       <h1>Refresh Me</h1>
 
       <div class="dice">
-        <p>Player 1</p>
+        <div class="output1"></div>
+        <input class="textBox textBox1" type="text" id="userInput" name="userInput" placeholder="First Player's name">
+        <div><button class="btnBox btnBox1">Enter</button></div>
         <img class="img1" src="./images/dice6.png">
       </div>
-
+      
       <div class="dice">
-        <p>Player 2</p>
+        <div class="output2"></div>
+        <input class="textBox textBox2" type="text" id="userInput" name="userInput" placeholder="Second Player's name" >
+        <div><button class="btnBox btnBox2">Enter</button></div>
         <img class="img2" src="./images/dice6.png">
       </div>
+      
 
     </div>
     <div class="roll">
