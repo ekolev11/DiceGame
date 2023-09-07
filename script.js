@@ -48,7 +48,7 @@ window.addEventListener('devicemotion', function(event) {
     );
   
     // Define a threshold for shake detection
-    const shakeThreshold = 15; // You can adjust this value
+    const shakeThreshold = 3; // You can adjust this value
   
     // If the acceleration exceeds the threshold, roll the dice
     if (accelerationMagnitude > shakeThreshold) {
