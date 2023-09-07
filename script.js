@@ -35,4 +35,24 @@ if(randomNumber1 > randomNumber2){
 }
 }
 button.addEventListener("click", rollTheDice);
-
+// Add an event listener to detect device motion
+window.addEventListener('devicemotion', function(event) {
+    // Get the acceleration values
+    const accelerationX = event.acceleration.x;
+    const accelerationY = event.acceleration.y;
+    const accelerationZ = event.acceleration.z;
+  
+    // Calculate the overall acceleration
+    const accelerationMagnitude = Math.sqrt(
+      accelerationX ** 2 + accelerationY ** 2 + accelerationZ ** 2
+    );
+  
+    // Define a threshold for shake detection
+    const shakeThreshold = 15; // You can adjust this value
+  
+    // If the acceleration exceeds the threshold, roll the dice
+    if (accelerationMagnitude > shakeThreshold) {
+      rollTheDice(); // Call your dice rolling function here
+    }
+  });
+  
